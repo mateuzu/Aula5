@@ -10,24 +10,24 @@ public class Exercicio1 {
 		
 		Scanner sc = new Scanner(System.in);
 		ArrayList<String> cores = new ArrayList<>();
-		String x;
+		String cor;
 		
 		for (int i = 0; i < 5; i++) {
 			System.out.print("Digite uma cor: ");
-			x = sc.next();
-			cores.add(x);
+			cor = sc.next();
+			cores.add(cor);
 		}
 		
 		System.out.println("\nListar todas as cores: ");
-		for (String cor : cores) {
-			System.out.println(cor);
+		for (String color : cores) {
+			System.out.print(color + " ");
 		}
 		
 		Collections.sort(cores);
 		
-		System.out.println("\nOrdenar as cores: ");
-		for (String cor : cores) {
-			System.out.println(cor);
+		System.out.println("\n\nOrdenar as cores: ");
+		for (String color : cores) {
+			System.out.print(color + " ");
 		}
 		
 		sc.close();
